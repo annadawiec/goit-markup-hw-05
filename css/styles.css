@@ -660,3 +660,17 @@ body {
   transform: translatey(100%);
   transition: transform 250ms ease;
 }
+
+.is-active::after {
+  content: "";
+  background-color: var(--main-blue);
+  width: 53px;
+  height: 4px;
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+
+.is-active {
+  position: relative;
+}
