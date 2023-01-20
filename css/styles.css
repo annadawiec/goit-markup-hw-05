@@ -77,8 +77,6 @@
   flex: 1;
 }
 
-/* CSS for HEADER */
-
 .lista {
   gap: 46px;
 }
@@ -94,8 +92,9 @@
 }
 
 .web-navigation:hover {
-  /* CSS for HEADER */
   color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-email {
@@ -109,15 +108,21 @@
 
 .header-email:hover {
   color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-email:focus {
   color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-email:hover svg,
 .header-email:focus svg {
   fill: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-phone {
@@ -132,11 +137,15 @@
 .header-phone:hover {
   color: var(--main-blue);
   margin-top: 34px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-phone:hover svg,
 .header-phone:focus svg {
   fill: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope {
@@ -186,6 +195,8 @@ body {
   color: var(--team-background);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-type:focus {
@@ -193,6 +204,8 @@ body {
   color: var(--team-background);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-name {
@@ -220,6 +233,7 @@ body {
   margin-bottom: 20px;
   margin-left: 24px;
 }
+
 .project-category {
   color: var(--contact-color);
   font-size: 16px;
@@ -292,6 +306,8 @@ body {
   color: var(--main-background);
   cursor: pointer;
   margin-left: 700px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-studio {
@@ -453,10 +469,14 @@ body {
 
 .item:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-buttons {
@@ -478,10 +498,14 @@ body {
 .logo-icon:hover {
   fill: var(--main-blue);
   border: 1px solid var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-icon:focus {
   fill: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scope {
@@ -503,10 +527,14 @@ body {
 
 .icon:hover {
   fill: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon:focus {
   fill: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-sm {
@@ -528,11 +556,15 @@ body {
 .social-item:hover,
 .social-item:focus {
   background-color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item:hover svg,
 .social-item:focus svg {
   fill: var(--main-background);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join {
@@ -587,11 +619,15 @@ body {
 .social-item-footer:hover,
 .social-item-footer:focus {
   background-color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item-footer:hover svg,
 .ssocial-item-footer:focus svg {
   fill: var(--main-background);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us {
@@ -607,6 +643,27 @@ body {
     0px 2px 1px #00000033;
   border-radius: 4px;
   position: relative;
+  animation-name: openWindow;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  transform: scale(1);
+}
+
+@keyframes openWindow {
+  0% {
+    transform: scale(0.2);
+  }
+
+  30% {
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .modal {
@@ -619,6 +676,8 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -640,8 +699,36 @@ body {
   cursor: pointer;
 }
 
+.close-btn:hover {
+  animation-name: closeWindow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes closeWindow {
+  0% {
+    background-color: var(--main-background);
+  }
+
+  100% {
+    background-color: var(--main-blue);
+  }
+}
+
+.item:hover .overlay {
+  transform: translatey(0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .box:hover .overlay {
   transform: translatey(0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box {
@@ -655,12 +742,23 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--main-blue);
+  background-color: rgba(33, 150, 243, 0.9);
   color: var(--main-background);
   padding: 49px 45px 49px 24px;
 
   transform: translatey(100%);
-  transition: transform 250ms ease;
+}
+
+.projects {
+  position: relative;
+}
+
+.projects:hover .overlay {
+  transform: translatey(0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-active::after {
