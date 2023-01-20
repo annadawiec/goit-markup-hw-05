@@ -306,8 +306,17 @@ body {
   color: var(--main-background);
   cursor: pointer;
   margin-left: 700px;
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order:hover {
+  transform: scale(1.5);
+}
+
+.order:focus {
+  transform: scale(1.5);
 }
 
 .text-studio {
@@ -644,7 +653,7 @@ body {
   border-radius: 4px;
   position: relative;
   animation-name: openWindow;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-timing-function: ease;
   transform: scale(1);
 }
