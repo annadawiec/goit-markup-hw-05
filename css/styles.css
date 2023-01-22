@@ -434,16 +434,23 @@ body {
 }
 
 .footer-phone:focus {
-  color: var(--main-background); /* CSS for FOOTER*/
-}
+  color: var(--main-background);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} /* CSS for FOOTER*/
 
 .footer-mail:hover {
-  color: var(--main-background); /* CSS for FOOTER*/
-}
+  color: var(--main-background);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} /* CSS for FOOTER*/
 
 .footer-mail:focus {
-  color: var(--main-background); /* CSS for FOOTER*/
+  color: var(--main-background);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* CSS for FOOTER*/
 
 .footer-style {
   height: 252px;
@@ -652,27 +659,6 @@ body {
     0px 2px 1px #00000033;
   border-radius: 4px;
   position: relative;
-  animation-name: openWindow;
-  animation-duration: 5s;
-  animation-timing-function: ease;
-  transform: scale(1);
-}
-
-@keyframes openWindow {
-  0% {
-    transform: scale(0.2);
-  }
-
-  30% {
-    transform: scale(0.5);
-  }
-  60% {
-    transform: scale(0.7);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 .modal {
