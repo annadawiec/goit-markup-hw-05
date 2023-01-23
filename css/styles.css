@@ -420,6 +420,7 @@ body {
   width: 231px;
   height: 21px;
   padding-bottom: 9px;
+  padding-right: 30px;
 }
 
 .footer-phone {
@@ -428,6 +429,7 @@ body {
   text-decoration: none; /* CSS for FOOTER*/
   color: var(--footer-mail);
   padding-bottom: 60px;
+  padding-right: 30px;
 }
 
 .footer-phone:hover {
