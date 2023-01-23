@@ -431,6 +431,8 @@ body {
 
 .footer-phone:hover {
   color: var(--main-background); /* CSS for FOOTER*/
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-phone:focus {
@@ -450,7 +452,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* CSS for FOOTER*/
 
 .footer-style {
   height: 252px;
@@ -467,6 +468,64 @@ body {
 .footer-contact-phone {
   margin-top: 0; /* CSS for FOOTER*/
   margin-bottom: 0;
+}
+
+.footer-list {
+  display: inline;
+}
+.icon-footer {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: var(--logo-color); /*kolor*/
+}
+
+.list-footer {
+  display: flex;
+  list-style-type: none;
+}
+
+.join-sm {
+  font-weight: 700px;
+  font-size: 14px;
+}
+
+.list-sm-footer {
+  list-style-type: none;
+  display: flex;
+  gap: 22px;
+  padding-left: 0;
+  margin-top: 20px;
+  gap: 10px;
+  cursor: pointer;
+}
+.social-media-footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-item-footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.social-item-footer:hover,
+.social-item-footer:focus {
+  background-color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-item-footer:hover svg,
+.ssocial-item-footer:focus svg {
+  fill: var(--main-background);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* CSS for FOOTER above*/
@@ -586,64 +645,6 @@ body {
 .join {
   margin-left: 170px;
   font-weight: 700px;
-}
-
-.footer-list {
-  display: inline;
-}
-.icon-footer {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  fill: var(--logo-color); /*kolor*/
-}
-
-.list-footer {
-  display: flex;
-  list-style-type: none;
-}
-
-.join-sm {
-  font-weight: 700px;
-  font-size: 14px;
-}
-
-.list-sm-footer {
-  list-style-type: none;
-  display: flex;
-  gap: 22px;
-  padding-left: 0;
-  margin-top: 20px;
-  gap: 10px;
-  cursor: pointer;
-}
-.social-media-footer {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.social-item-footer {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
-.social-item-footer:hover,
-.social-item-footer:focus {
-  background-color: var(--main-blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-item-footer:hover svg,
-.ssocial-item-footer:focus svg {
-  fill: var(--main-background);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us {
