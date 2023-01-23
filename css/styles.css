@@ -419,6 +419,7 @@ body {
   text-decoration: underline;
   width: 231px;
   height: 21px;
+  padding-bottom: 9px;
 }
 
 .footer-phone {
@@ -464,6 +465,11 @@ body {
   margin-top: 0;
   margin-bottom: 0; /* CSS for FOOTER*/
   padding-bottom: 9px;
+}
+
+.footer-contact-mail:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact-phone {
   margin-top: 0; /* CSS for FOOTER*/
